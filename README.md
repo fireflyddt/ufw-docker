@@ -377,7 +377,11 @@ UFW 是 Ubuntu 上很流行的一个 iptables 前端，可以非常方便的管�
 
 目前新的解决方案只需要修改一个 UFW 配置文件即可，Docker 的所有配置和选项都保持默认。
 
-修改 UFW 的配置文件 `/etc/ufw/after.rules`，在最后添加上如下规则：
+修改 UFW 的配置文件 
+```
+nano /etc/ufw/after.rules
+```
+在最后添加上如下规则：
 
     # BEGIN UFW AND DOCKER
     *filter
